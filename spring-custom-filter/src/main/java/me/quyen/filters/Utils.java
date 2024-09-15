@@ -16,7 +16,7 @@ public class Utils {
             Arrays.stream(klass.getInterfaces())
                     .forEach(itf -> LOG.info("{},super-interface:{}",++Utils.count,itf.toGenericString()));
             Optional.ofNullable(klass.getSuperclass())
-                    .ifPresent(zuper -> LOG.info("{}super-class:{}",++Utils.count,zuper.toGenericString()));
+                    .ifPresent(zuper -> LOG.info("{},super-class:{}",++Utils.count,zuper.toGenericString()));
             Stream.concat(
                     Arrays.stream(klass.getConstructors()), Arrays.stream(klass.getDeclaredConstructors())
             ).forEach(c -> LOG.info("{},constructor:{}",++Utils.count,c.toGenericString()));
