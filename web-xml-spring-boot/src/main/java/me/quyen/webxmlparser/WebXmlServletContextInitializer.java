@@ -1,4 +1,4 @@
-package me.quyen.xml;
+package me.quyen.webxmlparser;
 
 import jakarta.servlet.*;
 import org.apache.tomcat.util.descriptor.web.*;
@@ -7,15 +7,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.web.servlet.ServletContextInitializer;
 import org.xml.sax.InputSource;
 
-import javax.swing.text.html.Option;
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Array;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Implementation of {@link ServletContextInitializer} to register the servlets, listeners and filters defined
