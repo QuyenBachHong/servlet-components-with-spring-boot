@@ -16,6 +16,7 @@
 		<module>import-servlet-components</module>
 		<module>servlet-components-as-spring-beans</module>
 		<module>spring-custom-filter</module>
+		<module>web-xml-spring-boot</module>
 	</modules>
 	<name>servlet-components-with-spring-boot</name>
 	<description>Demo project for Spring Boot with Servlet Components as Servlet,Filter,Listener</description>
